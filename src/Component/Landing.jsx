@@ -116,7 +116,7 @@ export default function LandingPage(){
   const getWhetherData = async (location) => {
     setLoading(true);
     let search_type = typeof location === 'string' ? `q=${location}` : `lat=${location[0]}&lon=${location[1]}`;
-    const url =  `http://api.openweathermap.org/data/2.5/forecast`;
+    const url =  `https://api.openweathermap.org/data/2.5/forecast`;
     
     try{
         const res = await axios.get(`${url}?${search_type}&appid=${API_KEY}&units=metric&cnt=5&exclude=hourly,minutely`);
