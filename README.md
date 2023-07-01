@@ -44,7 +44,9 @@ To run the Weather App locally, follow these steps:
 The application uses environment variables to store the API key and other configuration settings. These variables are defined in the .env file.
 
 `REACT_APP_API_KEY` = Your API key obtained from OpenWeather API
+
 `REACT_APP_ICON_URL` = http://openweathermap.org/img/wn/
+
 `REACT_APP_URL` = The base URL for the [weather API ]( https://api.openweathermap.org/data/2.5)
 
 
