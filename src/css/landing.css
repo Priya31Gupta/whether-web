@@ -1,0 +1,122 @@
+.card{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    grid-template-columns: 49% 49%;
+    padding: 3% 10%;
+    border-radius: 1rem;
+    box-shadow: var(--profileShadow);
+    z-index: 100;
+}
+.card::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+.form-container{
+    border-radius: 1rem;
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+    background-size: cover;
+    box-shadow: var(--profileShadow);
+    z-index: 100;
+    flex-direction: column;
+    gap: 16rem;
+    background: var(--cardColor);
+    color: var(--textColor);
+    border-radius: 1rem;
+    position: relative;
+    padding: 3%;
+    max-width: 560px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list-dropdown{
+    max-height: 300px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    overflow: scroll;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.list-option{
+    position: relative;
+    height: 50px;
+    min-height: 20px;
+    padding: 2%;
+    width: 100%;
+    background-color: var(--cardColor);
+    color: var(--orange);
+    cursor: pointer;
+}
+.list-option:nth-child(1){
+    margin-top: 10px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.list-option:last-child{
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.list-dropdown::-webkit-scrollbar {
+    display: none;
+}
+.list-option:hover{
+    background-color: var(--statsColor);
+}
+.nodata {
+    margin-top: 20px;
+    color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.nodata h1{
+    color: var(--textColor);
+}
+.nodata img {
+    max-width: 100%;
+    border-radius: 5px;
+    aspect-ratio: 4/4;
+}
+
+.no-data-text{
+    padding: 50px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.form-container .sound-toggler{
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    height: 2rem;
+    justify-content: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card .form-container, .card .whether_data{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card .form-container{
+        border-top-right-radius: 1rem !important;
+        border-bottom-right-radius: 1rem !important;
+        height: auto;
+    }
+    .card .whether_data{
+        border-top-left-radius: 1rem !important;
+        border-bottom-left-radius: 1rem !important;
+    }
+}

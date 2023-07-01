@@ -1,0 +1,209 @@
+.whether_data{
+    border-radius: 1rem;
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+    background-size: cover;
+    box-shadow: var(--profileShadow);
+    z-index: 100;
+    flex-direction: column;
+    gap: 16rem;
+    background: var(--cardColor);
+    color: var(--textColor);
+    border-radius: 1rem;
+    position: relative;
+    padding: 3%;
+    max-width: 560px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.language-select-box{
+    width: 10rem;
+    height: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+}
+.language-select-box:focus{
+    outline: none!important;
+}
+.label{
+    width: 50px;
+    height: 26px;
+    background-color: rgba(46, 49, 56, 0.51);
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.ball{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.toggle-container {
+    padding: 0.5rem;
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.sub-header{
+    text-align: start;
+}
+.whether-data-card{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--cardColor);
+    box-shadow: var(--profileShadow);
+    margin: 1rem;
+    padding: 2rem;
+    overflow: scroll;
+}
+.whether-data-card:hover{
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 17px 2px rgba(74,68,68,.25);
+    top: -4px;
+    transition: all .2s ease-out;
+}
+.city{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--cardColor);
+    border-radius: .75rem;
+    padding: 2%;
+    align-items: center;
+    width: auto;
+}
+.city svg{
+    margin-right: 10px;
+}
+.clouds{
+    width: 50%;
+}
+.clouds .celsius{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--tempColor);
+}
+.clouds .cloud-icon{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.clouds .cloud-icon img{
+    height: 5em;
+    width: 5em;
+}
+.clouds .des{
+    color: var(--subHeadingColor);
+    font-size: .75rem;
+    line-height: 2.4;
+    font-weight: 700;
+}
+.more-info{
+    align-items: flex-start;
+    gap: 0.75rem;
+    justify-content: center;
+    padding-right: 2rem;
+}
+.more-info p{
+    font-weight: 500;
+    line-height: 2.4;
+    color: var(--orange);
+    width: 11em;
+}
+.summary-card{
+    border-right: 1px solid var(--hrColor);
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    height: 10em;
+    justify-content: space-between;
+    text-align: center;
+}
+.summary-card .celsius{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--tempColor);
+    line-height: 1.2;
+}
+.summary-card .whether-icon{
+    height: 2rem;
+    width: 2rem;
+}
+.summary-card .flex{
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+
+.summary-card .des{
+    color: var(--subHeadingColor);
+    font-size: .75rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.summary-cont{
+    padding: 1rem 0.5rem;;
+}
+.summary-card:last-child {
+    border-right: 0px solid var(--hrColor);
+}
+.data-card{
+    border-radius: 1rem;
+    z-index: 100;
+    flex-direction: column;
+    gap: 16rem;
+    color: var(--textColor);
+    border-radius: 1rem;
+    position: relative;
+    padding: 3%;
+    max-width: 560px;
+    background: transparent;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .summary-cont{
+        flex-direction: column;
+    }
+    .summary-card{
+        border-right: 0;
+        border-bottom: 1px solid var(--hrColor);
+        margin-bottom: 10px;
+    }
+    .summary-card:last-child{
+        border-bottom: 0px solid var(--hrColor);
+    }
+    .more-info{
+        padding: 0%;
+        text-align: center;
+    }
+    .clouds{
+        text-align: center;
+    }
+    .whether-data-card{
+        flex-wrap: wrap;
+    }
+}

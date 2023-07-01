@@ -1,0 +1,55 @@
+.whether_data_search{
+    box-shadow: none;
+    background-size: cover;
+    z-index: 100;
+    color: var(--textColor);
+    border-radius: 1rem;
+    position: relative;
+}
+.search-div{
+    margin-top: 150px;
+}
+.search-div h2{
+    text-align: center;
+    width: 100%;
+}
+.search-bar > input {
+  background-color: var(--cardColor);
+  width: 70%;
+  height: 3.1rem;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 20px;
+}
+.search-bar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.s-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(106.23deg, #a4b7b1, #095f62 100%);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px;
+    color: var(--textColor);
+    transition: all 0.5s ease;
+    height: 3.1rem;
+    border: none;
+}
+.s-icon:hover {
+    cursor: pointer;
+    background: linear-gradient(106.23deg, #226fae, #226fae 100%);
+    transform: scale(1.05);
+}
