@@ -30,7 +30,7 @@ To run the Weather App locally, follow these steps:
 
 - Navigate to the project directory: cd weather-app
 
-- Install the dependencies: npm install
+- Install the dependencies: `npm install`
 
 - Obtain an API key from OpenWeather API by signing up at `https://openweathermap.org/`
 
@@ -44,7 +44,9 @@ To run the Weather App locally, follow these steps:
 The application uses environment variables to store the API key and other configuration settings. These variables are defined in the .env file.
 
 `REACT_APP_API_KEY` = Your API key obtained from OpenWeather API
+
 `REACT_APP_ICON_URL` = http://openweathermap.org/img/wn/
+
 `REACT_APP_URL` = The base URL for the [weather API ]( https://api.openweathermap.org/data/2.5)
 
 
@@ -62,5 +64,6 @@ The application uses environment variables to store the API key and other config
 
 ### Sample Image 
 ![img](./src/assets/sample-image.png)
+
 # Contributing
 Contributions to the Weather App are welcome! If you find a bug or want to add a new feature, please open an issue or submit a pull request.
