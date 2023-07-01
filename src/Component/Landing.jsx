@@ -141,7 +141,7 @@ export default function LandingPage(){
           );
     }catch(e){
         setNoData('Location Not Found');
-        setLoading(true);
+        setLoading(false);
         
     }
   }
